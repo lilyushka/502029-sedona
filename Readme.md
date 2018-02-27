@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Лилия Люкманова](https://up.htmlacademy.ru/htmlcss/20/user/502029).
-* Наставник: `Дмитрий Половков`.
+* Наставник: `Дмитрий Половков`(https://htmlacademy.ru/profile/psinegmatic).
 
 ---
 
