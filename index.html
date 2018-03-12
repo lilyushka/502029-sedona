@@ -83,12 +83,32 @@
         <p>Большинство едет в гранд каньон и толпится там</p>
       </li>
     </ul>
-    <section class="offer">
+    <section class="search">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <div class="hotel-search">
         <a class="button" href="search.html">Поиск гостиницы в седоне</a>
       </div>
+      <div class="hotels-search-sedona">
+        <img src="img/map.jpg" alt="Седона на карте">
+        <form action="#" method="post">
+          <label for="arrival-date"> Дата заезда</label>
+          <input type="date" id="arrival-date" name="arrival-date">
+          <br>
+          <label for="departure-date">Дата выезда</label>
+          <input type="date" id="departure-date" name="departure-date">
+          <br>
+          <label for="adults-amount">Взрослые</label>
+          <input type="number" min="1" name="adults-amount" id="adults-amount">
+          <label for="children-amount">Дети</label>
+          <input type="number" min="1" name="children-amount" id="children-amount">
+          <br>
+          <input type="submit" value="Найти">
+          </div>
+        </form>
+
+      </section>
+
       <!-- здесь будет форма -->
     </section>
     <footer class="main-footer">
