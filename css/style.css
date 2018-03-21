@@ -30,6 +30,7 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
   }
+  /*TODO: надо вставить картинку, а она не хочет! хелп */
   .sedona-main-background {
     background-image: url("../img/background-1.jpg");
     background-position: top center;
@@ -146,9 +147,11 @@ font-size: 21px;
 line-height: 26px;
 text-align: center;
 }
+ /* тоже картинка не хочет вставляться*/
 container.filters {
   background-image: url("../img/hotels-background")
 }
+/*TODO: надо убрать рамки вокруг фильтров, а убираются рамки там и в чекбоксах тоже (их не надо)*/
 .filter fieldset {
   border: none;
 }
