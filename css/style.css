@@ -10,6 +10,9 @@ body {
   text-transform: uppercase;
 
   background-color: #f2f2f2;
+  background-image: url ("img/background-1.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 a {
   text-decoration: none;
