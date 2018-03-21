@@ -31,9 +31,12 @@ a {
   overflow: hidden;
   }
   /*TODO: надо вставить картинку, а она не хочет! хелп */
-  .sedona-main-background {
+  .promo {
     background-image: url("../img/background-1.jpg");
     background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 566px;
   }
 li {
   list-style: none;
@@ -147,11 +150,12 @@ font-size: 21px;
 line-height: 26px;
 text-align: center;
 }
- /* тоже картинка не хочет вставляться*/
-container.filters {
-  background-image: url("../img/hotels-background")
+
+.filters {
+  background-image: url("../img/hotels-background.jpg");
+  background-repeat: no-repeat;
 }
-/*TODO: надо убрать рамки вокруг фильтров, а убираются рамки там и в чекбоксах тоже (их не надо)*/
+
 .filter fieldset {
   border: none;
 }
@@ -161,8 +165,117 @@ container.filters {
   line-height: 21px;
   color:#ffffff;
 }
-.filter .filter-option {
+.filter .filter-option,
+output {
   font-size: 14px;
   line-height: 21px;
   color:#ffffff;
+}
+.filter-button {
+  font:inherit;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  border: 2px;
+/*TODO: почему рамка не появляется? :(*/
+  border-color: #ffffff;
+  background-color: transparent;
+}
+.filter-button:hover {
+  color: #000000;
+  border: 2px;
+  background-color: #ffffff;
+}
+.search-results {
+  background-color: white;
+}
+.search-results p,
+.search-results span {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.search-results h2 {
+  font-size: 12px;
+  line-height: 18px;
+}
+.search-results li a {
+  font-size: 12px;
+  line-height: 18px;
+  color: #cacaca;
+}
+.search-results li a:hover {
+  font-size: 12px;
+  line-height: 18px;
+  color: #81b3d2;
+}
+.search-results li a:active {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+.hotel-name h3 {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+}
+.hotel-name h3:hover {
+  font-size: 21px;
+  line-height: 26px;
+  color: #81b3d2;
+  font-weight: bold;
+}
+.hotel-name h3:active {
+  font-size: 21px;
+  line-height: 26px;
+  color: #cacaca;
+  font-weight: bold;
+}
+.type-price span{
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+.booking-buttons .more{
+  font-size: 14px;
+  line-height: 21px;
+  color:white;
+  background-color: #81b3d2;
+}
+.booking-buttons .book{
+  font-size: 14px;
+  line-height: 21px;
+  color:white;
+  background-color: #766357;
+}
+.booking-buttons .more:hover{
+  font-size: 14px;
+  line-height: 21px;
+  color:white;
+  background-color: #669ec0;
+}
+.booking-buttons .book:hover{
+  font-size: 14px;
+  line-height: 21px;
+  color:white;
+  background-color: #604e43;
+}
+.booking-buttons .more:active{
+  font-size: 14px;
+  line-height: 21px;
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+.booking-buttons .book:active{
+  font-size: 14px;
+  line-height: 21px;
+  color: #8b827c;
+  background-color: #503e33;
+}
+.rating p {
+ color: #666666;
+ font-size: 14px;
+ line-height: 21px;
+ background-color: #f2f2f2;
 }
