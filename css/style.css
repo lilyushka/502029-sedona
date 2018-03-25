@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
@@ -15,8 +15,8 @@ a {
   text-decoration: none;
 }
 .main-navigation {
-  font-size: 16px;
-  line-height: 56px;
+  font-size: 14px;
+  line-height: 26px;
   color: #000000;
   background-color: #ffffff;
 }
@@ -30,7 +30,6 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
   }
-  /*TODO: надо вставить картинку, а она не хочет! хелп */
   .promo {
     background-image: url("../img/background-1.jpg");
     background-position: top center;
@@ -55,16 +54,27 @@ color: #b2b2b2;
   }
 .sedona-description {
   text-align: center;
+  font-size: 14px;
+  line-height: 26px;
 
 }
 .sedona-description h3 {
 font-size: 21px;
 line-height: 26px;
 }
-.reason-description h3,
+/*
+
 .services h3,
 .reason-item h3 {
 font-size: 21px;
+*/
+.reasons-to-visit {
+  font-size: 14px;
+  line-height: 21px;
+}
+.reasons-to-visit h3 {
+  font-size: 21px;
+  font-weight: bold;
 }
 .reason-description {
   background-color: #81b3d2;
@@ -72,36 +82,33 @@ font-size: 21px;
   text-align: center;
   width: 400px;
   padding: 50px 46px 40px 46px;
-  text-align: 21px;
 }
-.reason-description h2 {
-  font-weight: bold;
-}
-
 .services {
   background-color: #ffffff;
   text-align: center;
-}
-.service-item {
+  font-size: 14px;
+  line-height: 21px;
   color: #000000;
 }
-.service-item h3 {
+.services h3 {
+  font-size: 21px;
   font-weight: bold;
 }
 .reason-item {
   background-color: #eeeeee;
+  color: #000000;
   text-align: center;
-}
-.reasons-item h3 {
-  font-weight: bold;
 }
 .search {
   text-align: center;
   background-color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
 }
 .search h2 {
   font-weight: bold;
   font-size: 30px;
+  line-height: 36px;
 }
 .hotel-search .button {
   font: inherit;
@@ -120,9 +127,11 @@ font-size: 21px;
   color: #928a85;
 }
 .hotels-search-sedona input {
-  font: inherit;
   background-color: #f2f2f2;
   border: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
 }
 .hotels-search-sedona input:hover {
 background-color: #ebebeb;
@@ -131,16 +140,15 @@ background-color: #ebebeb;
 background-color: #ffffff;
 border: 2px solid #e5e5e5;
 }
-.hotels-search-sedona input.search-submit {
+.hotels-search-sedona .search-submit {
 background-color: #81b3d2;
 font-size: 21px;
-font-weight: bold ;
 color: #ffffff;
 }
-.hotels-search-sedona input.search-submit:hover {
+.hotels-search-sedona .search-submit:hover {
   background-color: #669ec0;
 }
-.hotels-search-sedona input.search-submit:active {
+.hotels-search-sedona .search-submit:active {
   background-color: #5496bd;
 }
 .main-footer {
@@ -150,7 +158,6 @@ font-size: 21px;
 line-height: 26px;
 text-align: center;
 }
-
 .filters {
   background-image: url("../img/hotels-background.jpg");
   background-repeat: no-repeat;
@@ -172,7 +179,6 @@ output {
   color:#ffffff;
 }
 .filter-button {
-  font:inherit;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
@@ -188,6 +194,8 @@ output {
 }
 .search-results {
   background-color: white;
+  font-size: 12px;
+  line-height: 18px;
 }
 .search-results p,
 .search-results span {
@@ -199,19 +207,13 @@ output {
   font-size: 12px;
   line-height: 18px;
 }
-.search-results li a {
-  font-size: 12px;
-  line-height: 18px;
+.search-results a {
   color: #cacaca;
 }
-.search-results li a:hover {
-  font-size: 12px;
-  line-height: 18px;
+.search-results a:hover {
   color: #81b3d2;
 }
-.search-results li a:active {
-  font-size: 12px;
-  line-height: 18px;
+.search-results a:active {
   color: #000000;
 }
 .hotel-name h3 {
