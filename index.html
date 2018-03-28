@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Седона-главная</title>
@@ -7,8 +8,9 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <header class="main-header">
+  <header class="main-header-index">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
         <img src="img/sedona_logo.png" alt="Логотип Седоны">
@@ -30,9 +32,6 @@
     </nav>
   </header>
   <main class="container">
-    <!-- а вот здесь я вроде добавила место для картинки, но не работает-->
-    <section class="promo">
-    </section>
     <section class="sedona-description">
       <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
@@ -49,15 +48,15 @@
     <section>
       <h2 class="visually-hidden">Предложения в Седоне</h2>
       <ul class="services">
-        <li class="service-item">
+        <li class="service-item" class="accomodation">
           <h3>Жилье</h3>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
-        <li class="service-item">
+        <li class="service-item" class="food">
           <h3>Еда</h3>
           <p>Всегда заказываете фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li class="service-item">
+        <li class="service-item" class="souvenirs">
           <h3>Сувениры</h3>
           <p>Не только китайского, но и местного производства!</p>
         </li>
@@ -96,39 +95,45 @@
         <a class="button" href="search.html">Поиск гостиницы в седоне</a>
       </div>
       <div class="hotels-search-sedona">
-        <img src="img/map.jpg" alt="Седона на карте">
+        <img src="img/map.jpg" alt="Седона на карте" class="map">
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
-          <label for="arrival-date">Дата заезда:</label>
-          <input type="date" id="arrival-date" name="arrival-date">
+            <label for="arrival-date">Дата заезда:</label>
+            <input type="date" id="arrival-date" name="arrival-date">
           </p>
           <p>
-          <label for="departure-date">Дата выезда:</label>
-          <input type="date" id="departure-date" name="departure-date">
+            <label for="departure-date">Дата выезда:</label>
+            <input type="date" id="departure-date" name="departure-date">
           </p>
           <p>
-          <label for="adults-amount">Взрослые:</label>
-          <input type="number" min="1" name="adults-amount" id="adults-amount">
+            <label for="adults-amount">Взрослые:</label>
+            <input type="number" min="1" name="adults-amount" id="adults-amount">
           </p>
           <p>
-          <label for="children-amount">Дети:</label>
-          <input type="number" min="1" name="children-amount" id="children-amount">
+            <label for="children-amount">Дети:</label>
+            <input type="number" min="1" name="children-amount" id="children-amount">
           </p>
           <input type="submit" value="НАЙТИ" class="search-submit">
         </form>
       </div>
-      </section>
+    </section>
     <footer class="main-footer">
       <b class="footer-hashtag">#visitsedona</b>
       <ul class="sedona-socials">
         <li>
-          <a class="button" href="#" class="twitter">Twitter</a>
+          <a class="button" href="#" class="twitter">
+            <span class="visually-hidden">Twitter</span>
+          </a>
         </li>
         <li>
-          <a class="button" href="#" class="facebook">Facebook</a>
+          <a class="button" href="#" class="facebook">
+            <span class="visually-hidden">Facebook</span>
+          </a>
         </li>
         <li>
-          <a class="button" href="#" class="youtube">Youtube</a>
+          <a class="button" href="#" class="youtube">
+            <span class="visually-hidden">Youtube</span>
+          </a>
         </li>
       </ul>
       <div class="htmlacademy">
@@ -137,4 +142,5 @@
     </footer>
   </main>
 </body>
+
 </html>
