@@ -13,7 +13,7 @@
   <header class="main-header-hotels">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
-        <img src="img/sedona_logo.png" alt="Логотип Седоны">
+        <img src="img/sedona-logo-prozr.png" alt="Логотип Седоны">
       </a>
       <ul class="site-navigation">
         <li>
@@ -35,49 +35,49 @@
     <h1 class="visually-hidden">Подбор гостиницы</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Инфраструктура</legend>
-          <ul class="filters-list">
+          <ul class="filters-list infrastructure">
             <li class="filter-option">
-              <input class="filter-input filter-input-checkbox" type="checkbox" name="swimming" id="filter-swimming" checked>
-              <label for="filter-swimming">Бассейн</label>
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="swimming" id="filter-swimming" checked>
+              <label for="filter-swimming" class="form-label">Бассейн</label>
             </li>
             <li class="filter-option">
-              <input class="filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
-              <label for="filter-parking">Парковка</label>
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="parking" id="filter-parking">
+              <label for="filter-parking" class="form-label">Парковка</label>
             </li>
             <li class="filter-option">
-              <input class="filter-input filter-input-checkbox" type="checkbox" name="wifi" id="filter-wifi">
-              <label for="filter-wifi">Wi-fi</label>
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="wifi" id="filter-wifi">
+              <label for="filter-wifi" class="form-label">Wi-fi</label>
             </li>
           </ul>
         </fieldset>
         <fieldset>
           <legend>Тип жилья</legend>
-          <ul>
+          <ul class="filters-list types">
             <li class="filter-option">
-              <input class=" filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
-              <label for="filter-hotel">Гостиница</label>
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="filter-hotel" class="form-label">Гостиница</label>
             </li>
             <li class="filter-option">
-              <input class="filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
-              <label for="filter-motel">Мотель</label>
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel" class="form-label">Мотель</label>
             </li>
             <li class="filter-option">
-              <input class="filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
-              <label for="filter-apartments">Апартаменты</label>
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="apartments" id="filter-apartments" checked>
+              <label for="filter-apartments" class="form-label">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+          <div class="filters-range">
           <legend>Стоимость в сутки (Р):</legend>
           <output name="price-from">От 0</output>
           <output name="price-to">До 3000</output>
           <br>
           <input type="range" id="price-range" name="price-range" min="0" max="4000" value="3000" step="1">
           <label for="price-range"></label>
-        </fieldset>
+          </div>
         <button type="submit" class="filter-button buttons">Показать</button>
       </form>
     </section>
@@ -170,28 +170,33 @@
     </section>
   </main>
   <footer class="main-footer">
-    <b class="footer-hashtag">#visitsedona</b>
-    <ul class="sedona-socials">
-      <li>
-        <a class="button" href="#">
-          <span class="visually-hidden">Twitter</span>
-        </a>
-      </li>
-      <li>
-        <a class="button" href="#">
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-      <li>
-        <a class="button" href="#">
-          <span class="visually-hidden">Youtube</span>
-        </a>
-      </li>
-    </ul>
-    <div class="htmlacademy">
-      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">Лого академии</a>
-    </div>
-  </footer>
+      <b class="footer-hashtag">#visitsedona</b>
+      <ul class="sedona-socials">
+        <li>
+          <a class="button-social" href="#" class="twitter">
+            <span class="visually-hidden">Twitter</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="button-social" href="#" class="facebook">
+            <span class="visually-hidden">Facebook</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="button-social" href="#" class="youtube">
+            <span class="visually-hidden">Youtube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+              <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="htmlacademy">
+        <a class="html-logo" id="link-html"href="https://htmlacademy.ru/intensive/htmlcss"><span class="link-html-text visually-hidden">Website by</span></a>
+      </div>
+    </footer>
   </div>
 </body>
 

@@ -390,33 +390,78 @@ margin-right: auto;
   align-items: center;
   justify-content: center;
 }
-.filters {
-  background-image: url("../img/hotels-background.jpg");
-  background-repeat: no-repeat;
-  width: 100%;
-}
-.filter {
+/*hotels*/
+
+.filters-form {
   display: flex;
   margin: 0;
   padding: 35px 70px;
-
+  background-image: url("../img/hotels-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 220px;
 }
-
-.filter fieldset {
+.infrastructure,
+.types {
+  width: 240px;
   border: none;
 }
-.filter legend {
+
+.filters-form fieldset {
+  border: none;
+}
+.filters-form legend {
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
   color:#ffffff;
 }
-.filter .filter-option,
+.filters-form .filter-option,
 output {
   font-size: 14px;
   line-height: 21px;
   color:#ffffff;
 }
+.filters-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.filters-list li {
+  margin-top: 25px;
+}
+.filters-list .form-label {
+  position: relative;
+  padding-left: 45px;
+}
+.filters-list .form-label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+
+  background: url("../img/checkbox-off.svg") center no-repeat;
+}
+.filters-list .filter-input-checkbox:checked + .form-label::before {
+  background: url("../img/checkbox-on.svg") 4px center no-repeat;
+}
+
+.filters-list .filter-input-checkbox:disabled + .form-label::before {
+  background: url("../img/checkbox-off-disabled.svg") center no-repeat;
+}
+
+.filters-list .filter-input-checkbox:checked:disabled + .form-label::before {
+  background: url("../img/checkbox-on-disabled.svg") 4px center no-repeat;
+}
+
+.filters-list .filter-input-checkbox:focus + .form-label::before {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .filter-button {
   font-size: 14px;
   line-height: 21px;
@@ -469,28 +514,30 @@ article {
   border-bottom: 1px solid #e5e5e5;
   border-top: 1px solid #e5e5e5;
 }
+.hotel-photo {
+  width: 165px;
+  display: block;
+}
 
 .hotel-description {
-  flex-direction: column;
-  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 565px;
+  margin: 0 0 auto 0;
 }
 .hotel-name h3 {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   font-weight: bold;
+  width: 100%;
+  margin: 0 0 5px 0;
 }
 .hotel-name h3:hover {
-  font-size: 21px;
-  line-height: 26px;
   color: #81b3d2;
-  font-weight: bold;
 }
 .hotel-name h3:active {
-  font-size: 21px;
-  line-height: 26px;
   color: #cacaca;
-  font-weight: bold;
 }
 .type-price span{
   font-size: 14px;
