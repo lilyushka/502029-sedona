@@ -11,6 +11,11 @@ body {
 
   background-color: #ffffff;
 }
+.container {
+width:1200px;
+margin: 0 auto;
+position: relative;
+}
 .main-header-index {
   background-image: url("../img/background-1.jpg");
   background-position: top center;
@@ -104,11 +109,22 @@ color: #b2b2b2;
   text-align: center;
   font-size: 14px;
   line-height: 26px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.sedona-description h3 {
+.sedona-description h1 {
 font-size: 21px;
 line-height: 26px;
-/*надо добавить ширину высоту*/
+width: 440px;
+height: 40px;
+margin-left: auto;
+margin-right: auto;
+}
+.sedona-description p {
+  font-size: 14px;
+  line-height: 26px;
+  margin-top: 40px;
 }
 .reasons-to-visit {
   font-size: 14px;
@@ -136,33 +152,89 @@ line-height: 26px;
 .services h3 {
   font-size: 21px;
   font-weight: bold;
+  margin-top: 164px;
+}
+.services p {
+  margin-top: 30px;
+  width: 284px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .service-item {
   width: 400px;
   position: relative;
   text-align: center;
-  padding-top: 165px;
-  padding-bottom: 85px;
 }
-/* FIXME: ПОЧЕМУ У МЕНЯ ЛАЖА С КАРТИНКАМИ?????? КОМУ МОЛИТЬСЯ, ЧТОБЫ ОНИ ВСТАВИЛИСЬ??*/
-.accomodation::after {
-  content:"";
 
-  position: absolute;
-
-  background-image: url("../img/icon-1.svg");
-  background-repeat: no-repeat;
-  background-color: #91b2d0;
-  width: 75px;
-  height: 72px;
-}
-/*сюда иконки */
 .reasons-to-visit {
   background-color: #eeeeee;
+  margin-top: 0px;
+}
+.service-item h3::before {
+  content: "";
+  position: absolute;
+  top: 55px;
+  left: 50%;
+
+	width: 80px;
+  height: 80px;
+
+	background-repeat: no-repeat;
+  background-position: center;
+
+  margin-left: -42px;
+
+}
+.service-item:nth-child(1) h3::before {
+	background-image: url(../img/icon-1.svg);
+}
+
+.service-item:nth-child(2) h3::before {
+	background-image: url(../img/icon-3.svg);
+}
+
+.service-item:nth-child(3) h3::before {
+	background-image: url(../img/icon-2.svg);
 }
 .reason-item {
   color: #000000;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 65px;
+}
+.reason2 {
+  margin-top:88px;
+}
+.reason1 {
+  margin-top: 59px;
+}
+.reason-item h3 {
+  margin-top: 50px;
+  width: 118px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reason-item p {
+  margin-top: 32px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.search-form {
+  position: absolute;
+  left: 50%;
+  z-index: 100;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 580px;
+  padding: 55px 60px;
+  box-sizing: border-box;
+
+  background-color: #fff;
+
+  transform: translateX(-50%);
 }
 .search {
   text-align: center;
@@ -172,22 +244,32 @@ line-height: 26px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px;
-
 }
 .search h2 {
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
+  margin-top: 58px;
+}
+.hotel-search {
+  margin-top: 54px;
+}
+.search .form-container {
+  position: relative;
+  width: 100%;
 }
 .hotel-search .button {
-  font: inherit;
   text-align: center;
   background-color: #766357;
   color: #ffffff;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+  width: 580px;
+  height: 86px;
+  padding: 30px 140px;
+  box-sizing: border-box;
+  display: block;
 }
 .hotel-search .button:hover {
   background-color: #604e43;
@@ -196,41 +278,92 @@ line-height: 26px;
   background-color: #503e33;
   color: #928a85;
 }
-.hotels-search-sedona input {
+.form-item input {
   background-color: #f2f2f2;
   border: none;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
 }
-.hotels-search-sedona input:hover {
+.form-item input:hover {
 background-color: #ebebeb;
 }
-.hotels-search-sedona input:focus {
+.form-item input:focus {
 background-color: #ffffff;
 border: 2px solid #e5e5e5;
 }
-.hotels-search-sedona .search-submit {
+.search-form .form-item {
+   position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 30px 0;
+}
+
+.search-form .form-label {
+  width: 100px;
+  margin-right: 15px;
+  text-align: left;
+}
+/*TODO: выровнять слово дети*/
+.search-form .form-field {
+  width: 345px;
+  background-color: #f2f2f2;
+  padding: 5px 40px 5px 15px;
+
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+.search-form .people {
+  width: 115px;
+  padding-left: 40px;
+
+  text-align: center;
+}
+.search-submit {
 background-color: #81b3d2;
 font-size: 21px;
 color: #ffffff;
+padding: 21px 196px 21px 196px;
+border:none;
 }
-.hotels-search-sedona .search-submit:hover {
+.search-submit:hover {
   background-color: #669ec0;
 }
-.hotels-search-sedona .search-submit:active {
+.search-submit:active {
   background-color: #5496bd;
 }
 .map {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/*icons*/
+.calendar { /*должен ли он открываться, т.е. быть кнопкой?*/
+  position: relative;
+  top: 0px;
+  right: 30px;
+  fill: #a9a9a9;
+}
+/*TODO: ЧТО ДЕЛАТЬ С ЭТИМИ КНОПКАМИ -+ ДЛЯ КОЛИЧЕСТВА ЛЮДЕЙ???:( отказываюсь понимать*/
+
 .main-footer {
-background-color: #ffffff;
+background-color: rgba(249, 251, 246, 0.5);
 font: inherit;
 font-size: 21px;
 line-height: 26px;
 text-align: center;
+display: flex;
+align-items: center;
+padding: 35px 0;
+width: 1200px;
+height: 120px;
+margin-left: auto;
+margin-right: auto;
 }
+/*TODO: как сделать футер наплывающим на карту?*/
 .sedona-socials {
   display: flex;
   width: 150px;
@@ -242,8 +375,21 @@ text-align: center;
 
   list-style: none;
 }
-/* сюда иконки сошиалс
-*/
+#link-html {
+  display: block;
+  background: url("../img/html_logo.png") no-repeat;
+  width: 115px;
+  height:41px;
+}
+/*надо добавить website by*/
+.button-social  {
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .filters {
   background-image: url("../img/hotels-background.jpg");
   background-repeat: no-repeat;
@@ -253,6 +399,7 @@ text-align: center;
   display: flex;
   margin: 0;
   padding: 35px 70px;
+
 }
 
 .filter fieldset {
