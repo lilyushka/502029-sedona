@@ -394,11 +394,13 @@ margin-right: auto;
 
 .filters-form {
   display: flex;
+  background-color: #81b3d2;
   margin: 0;
   padding: 35px 70px;
   background-image: url("../img/hotels-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 1200px 220px;
+  background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .infrastructure,
 .types {
@@ -475,6 +477,140 @@ output {
   border: 2px;
   background-color: #ffffff;
 }
+.filter-range {
+  width: 330px;
+  margin: 50px auto; /* для демо */
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
 .sort {
   display: flex;
 }
@@ -530,7 +666,7 @@ article {
   line-height: 26px;
   color: #000000;
   font-weight: bold;
-  width: 100%;
+  width: 226px;
   margin: 0 0 5px 0;
 }
 .hotel-name h3:hover {
@@ -539,10 +675,26 @@ article {
 .hotel-name h3:active {
   color: #cacaca;
 }
+.type-price {
+margin-top: 20px;
+margin-bottom: 20px;
+margin-left: 30px;
+}
 .type-price span{
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+}
+.type {
+  display: inline-block;
+	width: 110px;
+	height: 27px;
+	margin-right: 2px;
+}
+.price {
+  display: inline-block;
+	width: 142px;
+	height: 27px;
 }
 .booking-buttons .more{
   font-size: 14px;

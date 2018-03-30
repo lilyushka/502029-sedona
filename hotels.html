@@ -70,15 +70,21 @@
             </li>
           </ul>
         </fieldset>
-          <div class="filters-range">
-          <legend>Стоимость в сутки (Р):</legend>
-          <output name="price-from">От 0</output>
-          <output name="price-to">До 3000</output>
-          <br>
-          <input type="range" id="price-range" name="price-range" min="0" max="4000" value="3000" step="1">
-          <label for="price-range"></label>
+        <div class="filter-range">
+          <div class="filter-range-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
           </div>
-        <button type="submit" class="filter-button buttons">Показать</button>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
+        </div>
       </form>
     </section>
     <section class="search-results">
@@ -110,8 +116,8 @@
             <h3>Amara Resort & SPA</h3>
           </a>
           <p class="type-price">
-            <span>Гостиница</span>
-            <span>от 4000 р.</span>
+            <span class="type">Гостиница</span>
+            <span class="price">от 4000 р.</span>
           </p>
           <p class="booking-buttons">
             <a href="#" class="more">Подробнее</a>
@@ -132,8 +138,8 @@
             <h3>Desert Quail Inn</h3>
           </a>
           <p class="type-price">
-            <span>Мотель</span>
-            <span>от 3000 р.</span>
+            <span class="type">Мотель</span>
+            <span class="price">от 3000 р.</span>
           </p>
           <p class="booking-buttons">
             <a href="#" class="more">Подробнее</a>
@@ -154,8 +160,8 @@
             <h3>Villas At Poco Diablo</h3>
           </a>
           <p class="type-price">
-            <span>Апартаменты</span>
-            <span>от 2000 р.</span>
+            <span class="type">Апартаменты</span>
+            <span class="price">от 2000 р.</span>
           </p>
           <p class="booking-buttons">
             <a href="#" class="more">Подробнее</a>
