@@ -8,222 +8,265 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="container">
-  <header class="main-header-hotels">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/sedona-logo-prozr.png" width="138" height="70" alt="Логотип Седоны">
-      </a>
-      <ul class="site-navigation">
-        <li>
-          <a href="info.html">Информация</a>
-        </li>
-        <li>
-          <a href="photo.html">Фото и видео</a>
-        </li>
-        <li>
-          <a href="state-map.html">Карта штата</a>
-        </li>
-        <li>
-          <a href="hotels.html">Гостиницы</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="container">
-    <h1 class="visually-hidden">Подбор гостиницы</h1>
-    <section class="filters">
-      <h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
-      <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="infrastructure">
-          <legend>Инфраструктура</legend>
-          <ul class="filters-list">
-            <li class="filter-option">
-              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="swimming" id="filter-swimming" checked>
-              <label for="filter-swimming" class="form-label">Бассейн</label>
-            </li>
-            <li class="filter-option">
-              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="parking" id="filter-parking">
-              <label for="filter-parking" class="form-label">Парковка</label>
-            </li>
-            <li class="filter-option">
-              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="wifi" id="filter-wifi">
-              <label for="filter-wifi" class="form-label">Wi-fi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="accomodation-type">
-          <legend>Тип жилья</legend>
-          <ul class="filters-list">
-            <li class="filter-option">
-              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>
-              <label for="filter-hotel" class="form-label">Гостиница</label>
-            </li>
-            <li class="filter-option">
-              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="motel" id="filter-motel" checked>
-              <label for="filter-motel" class="form-label">Мотель</label>
-            </li>
-            <li class="filter-option">
-              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="apartments" id="filter-apartments" checked>
-              <label for="filter-apartments" class="form-label">Апартаменты</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="price-range">
-        <div class="filter-range">
-          <div class="filter-range-title">Стоимость в сутки (р):</div>
-          <div class="price-controls">
-            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-          </div>
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
-            </div>
-            <div class="range-toggle range-toggle-min"></div>
-            <div class="range-toggle range-toggle-max"></div>
-          </div>
-          <button class="btn-transparent" type="submit">Показать</button>
-        </div>
-      </form>
-    </fieldset>
-    </section>
-    <section class="search-results">
-      <p class="found">Найдено:
-        <span class="number-found">3</span>
-      </p>
-      <div class="sort">
-        <h2>Сортировка:</h2>
-        <ul class="sort-types">
+    <header class="main-header-hotels">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/sedona-logo-prozr.png" width="138" height="70" alt="Логотип Седоны">
+        </a>
+        <ul class="site-navigation">
           <li>
-            <a href="#">по цене</a>
+            <a href="info.html">Информация</a>
           </li>
           <li>
-            <a href="#">по типу</a>
+            <a href="photo.html">Фото и видео</a>
           </li>
           <li>
-            <a href="#">по рейтнгу</a>
+            <a href="state-map.html">Карта штата</a>
+          </li>
+          <li>
+            <a href="hotels.html">Гостиницы</a>
           </li>
         </ul>
-        <div class="sort-results-from">
-          <a "sort-results-up-dir" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg>
-          </a>
-          <a "sort-results-down-dir" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#81b3d2" d="M5.5 10L0 0h11"/></svg>
-          </a>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Подбор гостиницы</h1>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
+        <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="infrastructure">
+            <legend>Инфраструктура</legend>
+            <ul class="filters-list">
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="swimming" id="filter-swimming" checked>
+                <label for="filter-swimming" class="form-label">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking" class="form-label">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="wifi" id="filter-wifi">
+                <label for="filter-wifi" class="form-label">Wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="accomodation-type">
+            <legend>Тип жилья</legend>
+            <ul class="filters-list">
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel" class="form-label">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel" class="form-label">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="apartments" id="filter-apartments"
+                  checked>
+                <label for="filter-apartments" class="form-label">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="price-range">
+            <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от
+                  <input type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">до
+                  <input type="text" name="max-price" value="3000">
+                </label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+            </div>
+          </fieldset>
+        </section>
+      <section class="search-results">
+        <p class="found">Найдено:
+          <span class="number-found">3</span>
+        </p>
+        <div class="sort">
+          <h2>Сортировка:</h2>
+          <ul class="sort-types">
+            <li>
+              <a href="#" class="acc-price">по цене</a>
+            </li>
+            <li>
+              <a href="#" class="acc-type">по типу</a>
+            </li>
+            <li>
+              <a href="#" class="acc-rating">по рейтингу</a>
+            </li>
+          </ul>
+          <div class="sort-results-from">
+            <a "sort-results-up-dir" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#cacaca" d="M5.5 0L0 10h11z" />
+              </svg>
+            </a>
+            <a "sort-results-down-dir" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#81b3d2" d="M5.5 10L0 0h11" />
+              </svg>
+            </a>
+          </div>
         </div>
-      </div>
-      <h2 class="visually-hidden">Найденные отели</h2>
-      <article class="hotel">
-        <div class="hotel-photo">
-          <img src="img/amara.jpg" alt="Amara Resort & SPA photo">
-        </div>
-        <div class="hotel-description">
-          <a href="#" class="hotel-name">
-            <h3>Amara Resort & SPA</h3>
-          </a>
-          <p class="type-price">
-            <span class="type">Гостиница</span>
-            <span class="price">от 4000 р.</span>
-          </p>
-          <p class="booking-buttons">
-            <a href="#" class="more">Подробнее</a>
-            <a href="#" class="book">Забронировать</a>
-          </p>
-        </div>
-        <div class="rating">
-          <span class="hotel-stars-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+        <h2 class="visually-hidden">Найденные отели</h2>
+        <article class="hotel">
+          <div class="hotel-photo">
+            <img src="img/amara.jpg" alt="Amara Resort & SPA photo">
+          </div>
+          <div class="hotel-description">
+            <a href="#" class="hotel-name">
+              <h3>Amara Resort & SPA</h3>
+            </a>
+            <p class="type-price">
+              <span class="type">Гостиница</span>
+              <span class="price">от 4000 р.</span>
+            </p>
+            <p class="booking-buttons">
+              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="book">Забронировать</a>
+            </p>
+          </div>
+          <div class="rating">
+            <span class="hotel-stars-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                />
+              </svg>
             </span>
             <p>Рейтинг: 8,5</p>
-        </div>
-      </article>
-      <article class="hotel">
-        <div class="hotel-photo">
-          <img src="img/desert.jpg" alt="Desert Quail Inn photo">
-        </div>
-        <div class="hotel-description">
-          <a href="#" class="hotel-name">
-            <h3>Desert Quail Inn</h3>
-          </a>
-          <p class="type-price">
-            <span class="type">Мотель</span>
-            <span class="price">от 3000 р.</span>
-          </p>
-          <p class="booking-buttons">
-            <a href="#" class="more">Подробнее</a>
-            <a href="#" class="book">Забронировать</a>
-          </p>
-        </div>
-        <div class="rating">
-          <span class="hotel-stars-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
-          </span>
-          <p>Рейтинг: 8,9</p>
-        </div>
-      </article>
-      <article class="hotel">
-        <div class="hotel-photo">
-          <img src="img/villas.jpg" alt="Villas At Poco Diablo photo">
-        </div>
-        <div class="hotel-description">
-          <a href="#" class="hotel-name">
-            <h3>Villas At Poco Diablo</h3>
-          </a>
-          <p class="type-price">
-            <span class="type">Апартаменты</span>
-            <span class="price">от 2000 р.</span>
-          </p>
-          <p class="booking-buttons">
-            <a href="#" class="more">Подробнее</a>
-            <a href="#" class="book">Забронировать</a>
-          </p>
-        </div>
-        <div class="rating">
-          <span class="hotel-stars-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+          </div>
+        </article>
+        <article class="hotel">
+          <div class="hotel-photo">
+            <img src="img/desert.jpg" alt="Desert Quail Inn photo">
+          </div>
+          <div class="hotel-description">
+            <a href="#" class="hotel-name">
+              <h3>Desert Quail Inn</h3>
+            </a>
+            <p class="type-price">
+              <span class="type">Мотель</span>
+              <span class="price">от 3000 р.</span>
+            </p>
+            <p class="booking-buttons">
+              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="book">Забронировать</a>
+            </p>
+          </div>
+          <div class="rating">
+            <span class="hotel-stars-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                />
+              </svg>
+            </span>
+            <p>Рейтинг: 8,9</p>
+          </div>
+        </article>
+        <article class="hotel">
+          <div class="hotel-photo">
+            <img src="img/villas.jpg" alt="Villas At Poco Diablo photo">
+          </div>
+          <div class="hotel-description">
+            <a href="#" class="hotel-name">
+              <h3>Villas At Poco Diablo</h3>
+            </a>
+            <p class="type-price">
+              <span class="type">Апартаменты</span>
+              <span class="price">от 2000 р.</span>
+            </p>
+            <p class="booking-buttons">
+              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="book">Забронировать</a>
+            </p>
+          </div>
+          <div class="rating">
+            <span class="hotel-stars-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                />
+              </svg>
             </span>
             <p>Рейтинг: 9,2</p>
-        </div>
-      </article>
-    </section>
-  </main>
-  <footer class="main-footer">
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="main-footer">
       <b class="footer-hashtag">#visitsedona</b>
       <ul class="sedona-socials">
         <li>
           <a class="button-social" href="#" class="twitter">
             <span class="visually-hidden">Twitter</span>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
+              <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"
+              />
+            </svg>
           </a>
         </li>
         <li>
           <a class="button-social" href="#" class="facebook">
             <span class="visually-hidden">Facebook</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+              <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
+            </svg>
           </a>
         </li>
         <li>
           <a class="button-social" href="#" class="youtube">
             <span class="visually-hidden">Youtube</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
-              <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
+              <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"
+              />
             </svg>
           </a>
         </li>
       </ul>
       <div class="htmlacademy">
         <a class="html-logo" id="link-html" href="https://htmlacademy.ru/intensive/htmlcss">
-        <span>Website by </span>
-        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
+          <span>Website by </span>
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
+        </a>
       </div>
     </footer>
   </div>
