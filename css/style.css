@@ -1,17 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-
   background-color: #ffffff;
 }
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -41,7 +38,6 @@ a {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-
   width: 100%;
   list-style: none;
 }
@@ -57,23 +53,18 @@ a {
   margin-right: auto;
   margin-left: 1px;
   }
-
 .site-navigation li:nth-of-type(3) {
   margin-left: auto;
   margin-right: 16px;
   }
-
 .main-header-logo {
   position: absolute;
   top: 0;
   left: 50%;
-
   width: 138px;
   height: 70px;
-
   transform: translateX(-50%);
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -86,7 +77,7 @@ a {
   }
 .reason-description h3 {
   display: block;
-  padding: 27px 0 93px 0;
+  padding: 27px 93px 0;
   font-size: 21px;
   line-height: 21px;
   }
@@ -407,6 +398,14 @@ li {
   right: 30px;
   fill: #a9a9a9;
 }
+.calendar:hover {
+
+  fill: #ffffff;
+}
+.calendar:active {
+fill: #81b3d2;
+}
+
 .main-footer {
   background-color: rgba(249, 251, 246, 1);
   font: inherit;
@@ -468,6 +467,14 @@ li {
   align-items: center;
   justify-content: center;
 }
+.button-social:hover {
+  background-color: #669ec0;
+}
+.button-social:active {
+  background-color: #5496bd;
+  fill: #88b6d1;
+}
+
 /*hotels*/
 .main-header-logo {
   position: absolute;
@@ -521,6 +528,7 @@ output {
   position: relative;
   padding-left: 45px;
 }
+
 .filters-list .form-label::before {
   content: "";
   position: absolute;
@@ -534,15 +542,10 @@ output {
   background: url("../img/checkbox-on.svg") 4px center no-repeat;
 }
 .filters-list .filter-input-checkbox:disabled + .form-label::before {
-  background: url("../img/checkbox-off-disabled.svg") center no-repeat;
+  background: url("../img/checkbox-on.svg") center no-repeat #6a6a6a;
 }
 .filters-list .filter-input-checkbox:checked:disabled + .form-label::before {
-  background: url("../img/checkbox-on-disabled.svg") 4px center no-repeat;
-}
-.filters-list .filter-input-checkbox:focus + .form-label::before {
-  border-color: #663d15;
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  background: url("../img/checkbox-on.svg") 4px center no-repeat #6a6a6a;
 }
 .accomodation-type {
 margin: 0;
